@@ -1,0 +1,95 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #a51515;
+}
+
+a[href],
+a[href]:visited {
+  color: white;
+}
+a[href]:hover,
+a[href]:active {
+  color: black;
+}
+
+img {
+  max-height:200px;
+  max-width:200px;
+  height:auto;
+  width:auto;
+}
+
+.fill {
+  min-height: 500px;
+  height: 100%;
+}
+
+.cloud {
+  background: lightgray;
+  background: -webkit-radial-gradient(white, lightgray, gray);
+  background: -o-radial-gradient(white, lightgray, gray);
+  background: -moz-radial-gradient(white, lightgray, gray);
+  background: radial-gradient(white, lightgray, gray);
+}
+
+#cloudcanvas {
+  width: 100%;
+  height: 99%;
+}
+  
+.info {
+  background-color: #a51515;
+  text-align: center;
+  color: white;
+}
+    
+.info-box {
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.text {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*.fa {
+  vertical-align: middle;
+}
+*/
+.li-2x {
+  line-height: 36px;
+}
+
+.godown {
+  background-color: #a51515;
+}
+
+#tags {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  left: -900px;
+}
+
+#myname {
+  font-size: 4em;
+  font-family: 'Poiret One', cursive;
+}
+
+#myjob {
+  margin-bottom: 1em;
+}
+
+#bio {
+  margin-bottom: 0.5em;
+}
+
+#infolist {
+  text-align: left;
+  margin-left: 10%;
+}
