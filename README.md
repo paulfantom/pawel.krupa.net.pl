@@ -1,4 +1,4 @@
-# [pawel.krupa.net.pl](pawel.krupa.net.pl) also [paulfantom.tips](https://paulfantom.tips)
+# [pawel.krupa.net.pl](https://pawel.krupa.net.pl) also [paulfantom.tips](https://paulfantom.tips)
 
 My blabbering about technology and not only :smile:
 
