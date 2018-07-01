@@ -10,5 +10,5 @@ jobs:
     - script: 'mdspell --ignore-acronyms --en-us --report "**/*.md"'
     - script: 'write-good **/*.md'
 branches:
-  except:
-  - /.*/
+  only:
+    - master    
