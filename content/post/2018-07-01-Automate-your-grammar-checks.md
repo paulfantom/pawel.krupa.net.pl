@@ -64,7 +64,7 @@ Codeship also describes how to use tool called [write good](https://www.npmjs.co
 
 ## [Automate!](https://memegenerator.net/img/instances/65228817/automate.jpg)
 
-Since I want to use GitHub PR system for new articles and other changes on this blog I can use tools which are available in [GitHub marketplace](https://github.com/marketplace). This time the choice fell on Travis CI, partially because I've been using it for a long time. Quick look into [Travis documentation about using JavaScript](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/) and here is a `.travis.yml` file with everything needed.
+Since I want to use GitHub PR system for new articles and other changes, I can use tools which are available in [GitHub marketplace](https://github.com/marketplace). This time the choice fell on Travis CI, partially because I've been using it for a long time. Quick look into [Travis documentation about using JavaScript](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/) and here is a `.travis.yml` file with everything needed.
 
 ```yaml
 ---
@@ -78,6 +78,9 @@ jobs:
   include:
     - script: 'mdspell --ignore-acronyms --en-us --report **/*.md'
     - script: 'write-good **/*.md --yes-eprime --parse || true'
+braches:
+  only:
+    - master
 ```
 
 This also uses new Travis feature of build stages, runs checks in parallel, and caches NPM installation directory, so everything should be fast. I have also changed a little `write-good` execution, so it will do more checks, report it in more compact format, and will always return true (`write-good` doesn't have a mechanism for exceptions).
