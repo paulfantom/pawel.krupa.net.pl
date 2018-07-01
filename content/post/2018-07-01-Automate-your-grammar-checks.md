@@ -10,7 +10,7 @@ I wanted to start a blog, so a lot of people nowadays I've created a [GitHub rep
 
 ## Aspell? Hunspell? *spell?
 
-First of all it would be nice to find a CLI tool which could spell check plain-text files. A minute with google reveals that most frequently used spell checker tools are **Aspell** and **Hunspell**. They are similar in use and there are lots of articles on how to use them ([1](https://opensource.com/article/18/2/how-check-spelling-linux-command-line-aspell), [2](https://alexwlchan.net/2016/09/please-use-aspell/)). One problem with them is that I would like to do spell checking in non-interactive mode and both tools are usually used in interactive mode, als option to use them in non-interactive mode produces output which isn't human friendly [3](https://github.com/hunspell/hunspell/blob/master/docs/hunspell.1.md#pipe-mode). Nonetheless I decided to use Hunspell in a bash wrapper for some more readable output.
+First of all it would be nice to find a CLI tool which could spell check plain-text files. A minute with google reveals that most frequently used spell checker tools are **Aspell** and **Hunspell**. They are similar in use and there are lots of articles on how to use them ([1](https://opensource.com/article/18/2/how-check-spelling-linux-command-line-aspell), [2](https://alexwlchan.net/2016/09/please-use-aspell/)). One problem with them is that they are primarily used in interactive mode and I would like to do spell checking in non-interactive mode, which produces output unfriendly to human [3](https://github.com/hunspell/hunspell/blob/master/docs/hunspell.1.md#pipe-mode). Nonetheless I decided to use Hunspell in a bash wrapper for some more readable output.
 
 ### Friendly Hunspell?
 
@@ -52,7 +52,7 @@ Back to the drawing board.
 
 ## Developers lingo
 
-Maybe I started it wrong? I essentially need a tool written by developers for developers not to "spell check" my blog posts, but to "lint" my "code". And since my "code" looks more like a GitHub read-me or... a documentation, I should probably look for a "documentation linter". Quick google search and here I found a Codeship post about [improving documentation by automating spelling and grammar checks](https://blog.codeship.com/improve-documentation-by-automating-spelling-and-grammar-checks/). Hell yeah! That is exactly what I want to do! That blog post describes how to use an awesome tool called [markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) which was created to run spell checks on markdown files (duh!) using Hunspell and it even supports non-interactive mode! After running simple `npm install markdown-spellcheck -g` and `mdspell --ignore-acronyms --en-us --report "**/*.md"` I've got a nicely formatted output:
+Maybe I started it wrong? I essentially need a tool written by developers for developers not to "spell check" my blog posts, but to "lint" my "code". And since my "code" looks more like a GitHub read-me or... a documentation, I should probably look for a "documentation linter". Quick google search and here I found a Codeship post about [improving documentation by automating spelling and grammar checks](https://blog.codeship.com/improve-documentation-by-automating-spelling-and-grammar-checks/). Hell yeah! That is exactly what I want to do! That blog post describes how to use an awesome tool called [markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) which was created to run spell checks on markdown files (duh!) using Hunspell and it even supports non-interactive mode! After running simple `npm install markdown-spellcheck -g` and `mdspell --ignore-acronyms --en-us --report "content/*/*.md"` I've got a nicely formatted output:
 
 ![mdspell example output](/images/20180701-mdspell-example.png)
 
@@ -69,6 +69,8 @@ Since I want to use GitHub PR system for new articles and other changes, I can u
 ```yaml
 ---
 language: node_js
+node_js:
+  - "lts/*"
 cache:
   directories:
     - "node_modules"
@@ -76,8 +78,8 @@ before_install:
   - npm i -g markdown-spellcheck write-good
 jobs:
   include:
-    - script: 'mdspell --ignore-acronyms --en-us --report **/*.md'
-    - script: 'write-good **/*.md --yes-eprime --parse || true'
+    - script: 'mdspell --ignore-acronyms --en-us --report content/*/*.md'
+    - script: 'write-good content/*/*.md --yes-eprime --parse || true'
 braches:
   only:
     - master

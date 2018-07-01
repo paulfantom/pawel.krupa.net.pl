@@ -9,8 +9,8 @@ before_install:
   - npm i -g markdown-spellcheck write-good
 jobs:
   include:
-    - script: 'mdspell --ignore-acronyms --en-us --report "**/*.md"'
-    - script: 'write-good **/*.md'
+    - script: 'mdspell --ignore-acronyms --en-us --report "content/*/*.md"'
+    - script: 'write-good content/*/*.md'
 branches:
   only:
     - master    
