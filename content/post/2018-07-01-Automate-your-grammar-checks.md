@@ -54,13 +54,13 @@ Back to the drawing board.
 
 Maybe I started it wrong? I essentially need a tool written by developers for developers not to "spell check" my blog posts, but to "lint" my "code". And since my "code" looks more like a GitHub read-me or... a documentation, I should probably look for a "documentation linter". Quick google search and here I found a Codeship post about [improving documentation by automating spelling and grammar checks](https://blog.codeship.com/improve-documentation-by-automating-spelling-and-grammar-checks/). Hell yeah! That is exactly what I want to do! That blog post describes how to use an awesome tool called [markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) which was created to run spell checks on markdown files (duh!) using Hunspell and it even supports non-interactive mode! After running simple `npm install markdown-spellcheck -g` and `mdspell --ignore-acronyms --en-us --report "**/*.md"` I've got a nicely formatted output:
 
-![mdspell example output](images/20180701-mdspell-example.png)
+![mdspell example output](/static/images/20180701-mdspell-example.png)
 
 Since not every word can be in dictionary, `mdspell` can use `.spelling` file to store exceptions. Write a word in this file and `mdspell` won't report it as an error.
 
 Codeship also describes how to use tool called [write good](https://www.npmjs.com/package/write-good) which promotes better writing style by being a "naive linter for English prose for developers who can't write good and wanna learn to do other stuff good too". And since I can't write good, it looks like an ideal tool for me. Couple of commands later and I have another set of directions on how I shouldn't write:
 
-![write good example output](images/20180701-write-good-example.png)
+![write good example output](/static/images/20180701-write-good-example.png)
 
 ## [Automate!](https://memegenerator.net/img/instances/65228817/automate.jpg)
 
