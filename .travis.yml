@@ -10,7 +10,7 @@ before_install:
 jobs:
   include:
     - script: 'mdspell --ignore-acronyms --en-us --report "content/*/*.md"'
-    - script: 'write-good content/*/*.md'
+    - script: 'write-good --yes-eprime --parse content/*/*.md || true'
 branches:
   only:
     - master    

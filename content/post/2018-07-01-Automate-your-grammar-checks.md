@@ -79,7 +79,7 @@ before_install:
 jobs:
   include:
     - script: 'mdspell --ignore-acronyms --en-us --report content/*/*.md'
-    - script: 'write-good content/*/*.md --yes-eprime --parse || true'
+    - script: 'write-good --yes-eprime --parse content/*/*.md || true'
 braches:
   only:
     - master
