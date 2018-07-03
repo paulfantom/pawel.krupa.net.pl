@@ -56,7 +56,7 @@ exit $RET
 
 ### Not so markdown friendly Hunspell
 
-After running above script on some markdown files with embedded code (like this blog post) it was clear that I need some other a tool. Script
+After running above script on some markdown files with embedded code (like this blog post) it was clear that I need some other tool. Script
 produced many more lines which were part of code section and weren't important, for example:
 ```
 & ' 15 29: e, s, i, a, n, r, t, o, l, c, d, u, g, m, p
@@ -81,7 +81,7 @@ Hunspell and it even supports non-interactive mode! After running simple `npm in
 Since not every word can be in dictionary, `mdspell` can use `.spelling` file to store exceptions. Write a word in this file and `mdspell`
 won't report it as an error.
 
-Codeship also describes how to use tool called ["write good"](https://www.npmjs.com/package/write-good) which promotes better writing style by
+Codeship also describes how to use a tool called ["write good"](https://www.npmjs.com/package/write-good) which promotes better writing style by
 being a ["naive linter for English prose for developers who can't write good and wanna learn to do other stuff good too"](https://github.com/btford/write-good#write-good-). 
 And since I can't write good yet, it looks like an ideal tool for me. Couple of commands later and I have additional advices on how
 I shouldn't write:
