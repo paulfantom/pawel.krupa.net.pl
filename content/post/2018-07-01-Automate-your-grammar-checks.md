@@ -56,7 +56,7 @@ exit $RET
 
 ### Not so markdown friendly Hunspell
 
-After running above script on some markdown files with embedded code (like this blog post) it was clear that I need some other tool. Script
+After running above script on some markdown files with embedded code (like this blog post) it was clear that I need some other a tool. Script
 produced many more lines which were part of code section and weren't important, for example:
 ```
 & ' 15 29: e, s, i, a, n, r, t, o, l, c, d, u, g, m, p
@@ -83,7 +83,7 @@ won't report it as an error.
 
 Codeship also describes how to use tool called ["write good"](https://www.npmjs.com/package/write-good) which promotes better writing style by
 being a ["naive linter for English prose for developers who can't write good and wanna learn to do other stuff good too"](https://github.com/btford/write-good#write-good-). 
-And since I can't write good, it looks like an ideal tool for me. Couple of commands later and I have another set of directions on how
+And since I can't write good yet, it looks like an ideal tool for me. Couple of commands later and I have additional advices on how
 I shouldn't write:
 
 ![write good example output](/images/20180701-write-good-example.png)
@@ -115,7 +115,7 @@ braches:
 ```
 
 This also uses new Travis feature of build stages, runs checks in parallel, and caches NPM installation directory, so everything should be fast.
-I have also changed a little `write-good` execution, so it will do more checks, report it in more compact format, and will always return true
+I have also changed `write-good` execution a bit, so it will do more checks, report it in more compact format, and will always return true
 (`write-good` doesn't have a mechanism for exceptions).
 
 ## Sum up
