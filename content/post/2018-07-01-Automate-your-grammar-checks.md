@@ -123,5 +123,7 @@ more compact format, and will always return true (`write-good` doesn't have a me
 
 ## Sum up
 
-Lots of developers want to lint their code, so why not do the same for documentation or blog posts? It isn't difficult
-to install or use mentioned programs and they can increase quality of texts you write. 
+Noone likes to go through blog posts or even worse - documentations when there are plenty of grammar mistakes. We got 
+used to the red zigzag line under misspelled words. However who writes markdown in Libreoffice Writer or Microsoft Word?
+We tend to use same editors for markdown as for code, so why not adapt same techniques? Why not lint documentation?
+Especially if this is as simple as I described in text above.
