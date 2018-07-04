@@ -162,7 +162,7 @@ enableEmoji = true
   autoThumbnailImage = true
 
   # Your favicon path, default is "/favicon.png"
-  # favicon = "/favicon.png"
+  favicon = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Ethernet_Port.svg/240px-Ethernet_Port.svg.png"
 
   # Header configuration
   # The link at the right of the header is customizable
