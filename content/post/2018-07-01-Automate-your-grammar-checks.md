@@ -123,7 +123,7 @@ more compact format, and will always return true (`write-good` doesn't have a me
 
 ## Sum up
 
-Noone likes to go through blog posts or even worse - documentations when there are plenty of grammar mistakes. We got 
-used to the red zigzag line under misspelled words. However who writes markdown in Libreoffice Writer or Microsoft Word?
+No one likes to go through blog posts or even worse - documentations when there are plenty of grammar mistakes. We got 
+used to the red zigzag line under misspelled words. However who writes markdown in LibreOffice Writer or Microsoft Word?
 We tend to use same editors for markdown as for code, so why not adapt same techniques? Why not lint documentation?
 Especially if this is as simple as I described in text above.
