@@ -67,33 +67,36 @@ Time to get back to the drawing board.
 
 ## Developers lingo
 
-Maybe I started it wrong? I essentially need a tool written by developers for developers not to "spell check" my blog posts, but to "lint" my
-"code". And since my "code" looks more like a GitHub read-me or a documentation, I should probably look for a "documentation linter". Quick google
-search and here I found a Codeship post about
+Maybe I started it wrong? I essentially need a tool written by developers for developers not to "spell check" my blog
+posts, but to "lint" my "code". And since my "code" looks more like a GitHub read-me or a documentation, I should
+probably look for a "documentation linter". Quick google search and here I found a Codeship post about
 [improving documentation by automating spelling and grammar checks](https://blog.codeship.com/improve-documentation-by-automating-spelling-and-grammar-checks/).
 Hell yeah! That is exactly what I want to do! That blog post describes how to use an awesome tool called
-["markdown-spellcheck"](https://www.npmjs.com/package/markdown-spellcheck) which was created to run spell checks on markdown files (duh!) using
-Hunspell and it even supports non-interactive mode! After running simple `npm install markdown-spellcheck -g` and 
-`mdspell --ignore-acronyms --en-us --report "content/*/*.md"` I've got a nicely formatted output:
+["markdown-spellcheck"](https://www.npmjs.com/package/markdown-spellcheck) which was created to run spell checks on
+markdown files (duh!) using Hunspell and it even supports non-interactive mode! After running simple
+`npm install markdown-spellcheck -g` and `mdspell --ignore-acronyms --en-us --report "content/*/*.md"` I've got a
+nicely formatted output:
 
 ![mdspell example output](/images/20180701-mdspell-example.png)
 
-Since not every word can be in dictionary, `mdspell` can use `.spelling` file to store exceptions. Write a word in this file and `mdspell`
-won't report it as an error.
+Since not every word can be in dictionary, `mdspell` can use `.spelling` file to store exceptions. Write a word in this
+file and `mdspell` won't report it as an error.
 
-Codeship also describes how to use a tool called ["write good"](https://www.npmjs.com/package/write-good) which promotes better writing style by
-being a ["naive linter for English prose for developers who can't write good and wanna learn to do other stuff good too"](https://github.com/btford/write-good#write-good-). 
-And since I can't write good yet, it looks like an ideal tool for me. Couple of commands later and I have additional advices on how
-I shouldn't write:
+Codeship also describes how to use a tool called ["write good"](https://www.npmjs.com/package/write-good) which promotes
+better writing style by being a 
+["naive linter for English prose for developers who can't write good and wanna learn to do other stuff good too"](https://github.com/btford/write-good#write-good-). 
+And since I can't write good yet, it looks like an ideal tool for me. Couple of commands later and I have additional
+advices on how I shouldn't write:
 
 ![write good example output](/images/20180701-write-good-example.png)
 
 ## [Automate!](https://memegenerator.net/img/instances/65228817/automate.jpg)
 
 Since I want to use GitHub PR system for new articles and other changes, I can use tools which are available in
-[GitHub marketplace](https://github.com/marketplace). This time the choice fell on Travis CI, partially because I've been using it for a long time.
-Quick look into [Travis documentation about using JavaScript](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/) and here is
-a `.travis.yml` file with everything needed.
+[GitHub marketplace](https://github.com/marketplace). This time the choice fell on Travis CI, partially because I've
+been using it for a long time. Quick look into
+[Travis documentation about using JavaScript](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/) and 
+here is a `.travis.yml` file with everything needed.
 
 ```yaml
 ---
@@ -114,11 +117,11 @@ braches:
     - master
 ```
 
-This also uses new Travis feature of build stages, runs checks in parallel, and caches NPM installation directory, so everything should be fast.
-I have also changed `write-good` execution a bit, so it will do more checks, report it in more compact format, and will always return true
-(`write-good` doesn't have a mechanism for exceptions).
+This also uses new Travis feature of build stages, runs checks in parallel, and caches NPM installation directory, so
+everything should be fast. I have also changed `write-good` execution a bit, so it will do more checks, report it in
+more compact format, and will always return true (`write-good` doesn't have a mechanism for exceptions).
 
 ## Sum up
 
-Lots of developers want to lint their code, so why not do the same for documentation or blog posts? It isn't difficult to install or use mentioned
-programs and they can increase quality of texts you write. 
+Lots of developers want to lint their code, so why not do the same for documentation or blog posts? It isn't difficult
+to install or use mentioned programs and they can increase quality of texts you write. 
