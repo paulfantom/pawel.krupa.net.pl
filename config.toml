@@ -16,7 +16,7 @@ baseURL = "https://pawel.krupa.net.pl"
 relativeurls = true
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "Paweł Krupa"
+title = "Blabbering about tech related topics"
 theme = "hugo-tranquilpeak-theme"
 #disqusShortname = "paulfantom"
 googleAnalytics = "UA-121689100-1"
@@ -120,7 +120,7 @@ enableEmoji = true
   # If false it will flat categories.
   hierarchicalCategories = true
 
-  description = "Pawel Krupa' blog"
+  description = "Blabbering about tech related topics"
 
   # Customization
   # Define the behavior of the sidebar
