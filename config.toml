@@ -107,7 +107,7 @@ enableEmoji = true
   # dateFormat = "2 January 2006"
 
   # Global keywords configuration. Following keywords will be add to every pages
-  # keywords = ["development", "next-gen"]
+  keywords = ["it", "technology", "programming", "devops", "sre", "administration"]
 
   # Syntax highlighter, possible choice between: "highlight.js" (recommanded) and "prism.js" (experimental)
   # You can comment it to disable syntax highlighting
@@ -148,14 +148,14 @@ enableEmoji = true
   coverImage = "https://www.publicdomainpictures.net/pictures/170000/velka/grunge-background-14635609238au.jpg"
 
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
-  imageGallery = true
+  imageGallery = false
 
   # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
   thumbnailImage = true
   # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
   # Set this value to `right` if you have old posts to keep the old style on them
   # and define `thumbnailImagePosition` on a post to overwrite this setting
-  thumbnailImagePosition = "bottom"
+  thumbnailImagePosition = "left"
   # Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image
   # Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image
   # and set `autoThumbnailImage` to `false` on a post to overwrite this setting
