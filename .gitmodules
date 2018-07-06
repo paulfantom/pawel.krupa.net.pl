@@ -1,3 +1,4 @@
 [submodule "themes/hugo-tranquilpeak-theme"]
 	path = themes/hugo-tranquilpeak-theme
-	url = https://github.com/kakawait/hugo-tranquilpeak-theme.git
+	url = https://github.com/samuelmacedo83/hugo-tranquilpeak-theme.git
+	branch = adding-description-header
