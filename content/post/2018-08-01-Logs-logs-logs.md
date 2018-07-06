@@ -1,7 +1,13 @@
 ---
 title: "Logs, logs, logs"
-date: 2018-08-01
-tags: ["logs", "journald", "distributed"]
+description: "Logging system for heterogeneous geographically distributed environment"
+date: 1970-01-01
+thumbnailImagePosition: left
+thumbnailImage: https://www.internetstaff.com/wp-content/uploads/2014/10/journal2-300x183.png
+tags:
+  - logs
+  - journald
+  - distributed
 ---
 
 # Logging system for heterogeneous geographically distributed environment
