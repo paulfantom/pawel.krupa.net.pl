@@ -4,7 +4,7 @@ date: 2018-08-01
 tags: ["logs", "journald", "distributed"]
 ---
 
-# Logging system for heterogenous geo-distributed environment
+# Logging system for heterogeneous geographically distributed environment
 
 What a subject! You probably think this post will be about some large scale google-like infrastructure with thousands of
 nodes. Surprise! It's about my simple setup of some droplets in DigitalOcean, couple of raspberry pis, and 2 NAS boxes
@@ -25,7 +25,7 @@ Imagine how would you analyze what happened to you system after someone got acce
 failed? Of course without having remote log storage?
 
 As for me keeping logs stored somewhere else is important due to reduced I/O operations on SD card of raspberry pi's
-(nice to have with rpi running 24/7) and easier system management since I don't have to log into each box.
+(nice to have with SBC running 24/7) and easier system management since I don't have to log into each box.
 
 ## Collect!
 
@@ -42,7 +42,7 @@ As for me keeping logs stored somewhere else is important due to reduced I/O ope
 ### Self-hosted solutions
 
 
-### Someone else problem a.k.a "cloud"
+### Someone else problem AKA "cloud"
 
 
 ### LogDNA
