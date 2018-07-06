@@ -1,0 +1,4 @@
+[submodule "themes/hugo-tranquilpeak-theme"]
+        path = themes/hugo-tranquilpeak-theme
+        url = git@github.com:samuelmacedo83/hugo-tranquilpeak-theme.git
+        branch = adding-description-header
