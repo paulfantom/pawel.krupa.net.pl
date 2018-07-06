@@ -1,7 +1,10 @@
 ---
 title: "Automate your grammar checks"
+description: "Continuous Integration for a spoken language"
 date: 2018-07-01
-tags: ["documentation", "ci"]
+tags:
+  - documentation
+  - ci
 ---
 
 # Continuous Integration for a spoken language
