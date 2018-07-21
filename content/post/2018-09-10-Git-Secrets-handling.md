@@ -20,6 +20,7 @@ https://stackoverflow.com/questions/2397822/what-is-the-best-practice-for-dealin
 https://help.github.com/articles/removing-sensitive-data-from-a-repository/
 
 https://github.com/zricethezav/gitleaks
+https://github.com/zricethezav/gitleaks-ci
 
 https://github.com/StackExchange/blackbox
 
