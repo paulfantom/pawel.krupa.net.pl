@@ -9,7 +9,7 @@ before_install:
   - npm i -g markdown-spellcheck write-good
 jobs:
   include:
-    - script: 'mdspell --ignore-acronyms --en-us --report "content/*/*.md"'
+    - script: 'mdspell --ignore-acronyms --en-us --report "content/post/*.md"'
     - script: 'write-good --yes-eprime --parse content/*/*.md || true'
 branches:
   only:
