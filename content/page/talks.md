@@ -18,7 +18,7 @@ showActions: false
 - 2019/03/26 - ["Moar! I want moar! - Autoskalowanie w kubernetesie na przykładzie OpenShift 4.0"][11] (EN: "Moar! I want moar! Autoscaling in kubernetes with OpenShift 4.0 example") at [Warsaw IT Days][12]
 - 2018/11/21 - ["eBPF - How to drop iptables and monitor everything"][9] at [SO/DO Kraków][7]
 - 2018/10/25 - ["eBPF - How to drop iptables and monitor everything"][9] at [Net::IP Wrocław][10]
-- 2018/04/12 - Same [presentation about Prometheus & Ansible][6] but at [SO/DO Poznań][7]
+- 2018/04/14 - ["Prometheus & Ansible - czyli jak łatwo zarządzać monitoringiem nowej generacji"][6] with Roman Demachkovych at [SO/DO Poznań][7] 
 - 2018/03/14 - ["Prometheus & Ansible - czyli jak łatwo zarządzać monitoringiem nowej generacji"][6] (EN: "Prometheus 
   & Ansible - a way to manage monitoring") with Roman Demachkovych at [SO/DO Kraków][7]. [Recording!][8] :smile:
 - 2017/11/14 - 2017/12/05 - Multiple [docker workshops][5] at [SoInteractive][3]
