@@ -35,7 +35,7 @@ enableEmoji = true
 [author]
   name = "Paweł Krupa"
   bio = "I break stuff on purpose."
-  job = "Quality Engineer [@RedHat](https://www.redhat.com)"
+  job = "Software Engineer [@RedHat](https://www.redhat.com)"
   location = "Berlin, Germany"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   # gravatarEmail = "paulfantom@gmail.com"
