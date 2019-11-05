@@ -4,6 +4,7 @@ description: "Continuous Integration for a spoken language"
 thumbnailImagePosition: left
 thumbnailImage: https://www.nichemarket.co.za/wp-content/uploads/2018/03/spell-check-805x452.jpg
 date: 2018-07-01
+showDate: true
 tags:
   - documentation
   - ci
